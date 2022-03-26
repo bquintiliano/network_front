@@ -37,7 +37,6 @@ function Network(){
          
             if(IP.length != 0){
                 postIP(IP).then(response => {
-                    console.log(response)
 
                     if(!response.data.internetProvider){
                         setErrorIP(true)
@@ -62,7 +61,6 @@ function Network(){
 
          if(hiddenWhois === false){
             postWhois(domain).then(response => {
-                console.log(response)
 
                 if(response == 500) {
                     setErrorWhois(true)
